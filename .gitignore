@@ -1,0 +1,30 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.tmp
+
+# Pastas de configuração de editores
+.vscode/
+.idea/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Java
+target/
+bin/
+out/
+
+# C#
+obj/
+bin/
