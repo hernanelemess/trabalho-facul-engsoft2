@@ -23,6 +23,9 @@ while(true){
         case 1:
             acelerar(carro);
             break;
+        case 2:
+            frear(carro);
+            break;
     
         default:
             break;
@@ -46,4 +49,12 @@ function criaVeiculo(): Veiculo{
     return veiculo;
 }
 
-
+function frear(veiculo: Veiculo): void {
+    if (veiculo.velocidade > 0) {
+        veiculo.velocidade -= veiculo.potencia * 0.1;
+        if (veiculo.velocidade < 0) veiculo.velocidade = 0;
+        console.log("paraaaaando:", veiculo.velocidade);
+    } else {
+        console.log("o carro ta ja parado");
+    }
+}
